@@ -26,12 +26,12 @@ public class PowerCalculation {
 
 	}
 	
-	public static void power(int base ,int exponrnt) {
+	public static void power(Integer base ,Integer exponrnt) {
 		HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
 		HashMap<Integer,Integer> input=new HashMap<Integer, Integer>();
 		input.put(base, exponrnt);
 		
-		int result=1;
+		Integer result=1;
 		
 		for (;exponrnt!=0;exponrnt--) {
 			result *= base;
@@ -40,5 +40,6 @@ public class PowerCalculation {
 		System.out.println(input);
 		System.out.println(resultOutput);
 	}
+
 
 }
