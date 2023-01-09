@@ -1,11 +1,8 @@
 import java.util.HashMap;
 
-/**
- * 
- */
 
 /**
- * @author LAP-10
+ * This class will calculate the power function using base and exponent.
  *
  */
 public class PowerCalculation {
