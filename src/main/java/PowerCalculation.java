@@ -26,19 +26,26 @@ public class PowerCalculation {
 
 	}
 	
-	public static void power(Integer base ,Integer exponrnt) {
+	/**
+	 * Method to calculate the power using base and exponent
+	 * @param base
+	 * @param exponent
+	 * @return
+	 */
+	public static int power(Integer base ,Integer exponent) {
 		HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
 		HashMap<Integer,Integer> input=new HashMap<Integer, Integer>();
-		input.put(base, exponrnt);
+		input.put(base, exponent);
 		
-		Integer result=1;
+		int result=1;
 		
-		for (;exponrnt!=0;exponrnt--) {
+		for (;exponent!=0;exponent--) {
 			result *= base;
 		}
 		resultOutput.put("result", result);
-		System.out.println(input);
-		System.out.println(resultOutput);
+		//System.out.println(input);
+		//System.out.println(resultOutput);
+		return result;
 	}
 
 
