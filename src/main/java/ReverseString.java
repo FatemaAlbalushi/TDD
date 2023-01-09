@@ -9,6 +9,7 @@
 public class ReverseString {
 
 	/**
+	 * This method is for reversing a string
 	 * @param args
 	 */
 	public static void main(String[] args) {

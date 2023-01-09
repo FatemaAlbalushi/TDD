@@ -86,4 +86,7 @@ class EvenOddTest {
 		assertEquals(evenosshashmap1, eoinstanc.EvenOdd(arr4));
 
 	}
+
 }
+
+
