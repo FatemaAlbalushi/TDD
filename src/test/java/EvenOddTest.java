@@ -1,8 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import org.junit.jupiter.api.Test;
 
 /**
@@ -20,7 +18,6 @@ class EvenOddTest {
 
 	// 1. Empty array as an argument.
 	// Empty array
-	//{even=[null], odd=[null]}
 	@Test
 	void testEvenOdd1() {
 		EvenOdd eoinstanc = new EvenOdd();

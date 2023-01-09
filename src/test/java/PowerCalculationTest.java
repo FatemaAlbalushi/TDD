@@ -23,18 +23,17 @@ class PowerCalculationTest {
 	//2. base: null, exponent: null
 	void testpower2() {
 		PowerCalculation pwerinstanc= new PowerCalculation(); 
+		assertNull(pwerinstanc.power(null ,null));
+		
+	}
+	
+	@Test
+	//3. base: <any positive number>, exponent  <any positive number>
+	void testpower3() {
+		PowerCalculation pwerinstanc= new PowerCalculation(); 
 		
 		assertEquals(8, pwerinstanc.power(2, 3));
 		
 	}
-	
-//	@Test
-//	//3. base: <any positive number>, exponent  <any positive number>
-//	void testpower3() {
-//		PowerCalculation pwerinstanc= new PowerCalculation(); 
-//		
-//		assertEquals(8, pwerinstanc.power(2, 3));
-//		
-//	}
 
 }
