@@ -26,8 +26,8 @@ public class PowerCalculation {
 
 	}
 	
-	public static void power(int base ,int exponrnt) {
-		HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
+	public static int power(int base ,int exponrnt) {
+		//HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
 		HashMap<Integer,Integer> input=new HashMap<Integer, Integer>();
 		input.put(base, exponrnt);
 		
@@ -36,9 +36,10 @@ public class PowerCalculation {
 		for (;exponrnt!=0;exponrnt--) {
 			result *= base;
 		}
-		resultOutput.put("result", result);
-		System.out.println(input);
-		System.out.println(resultOutput);
+		//resultOutput.put("result", result);
+		//System.out.println(input);
+		System.out.println(result);
+		return result;
 	}
 
 }
