@@ -5,13 +5,11 @@ import java.util.Stack;
  * check if all  open brackets are close. 
  */
 public class bracketsValidation {
-
 	/**
 	 * Call the countBarn method with different input "String"
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		String str1 = "{ int x= (int)(0+1); int[] arr=new arr[10];;; }";
 		String str2 = "[{()}]";
 		String str3 = "]{()}[";
@@ -38,57 +36,67 @@ public class bracketsValidation {
 	 */
 	public static boolean countBarn(String str) {
 		Stack<Character> mystack1 = new Stack<Character>();
+		
+		if (str==null)
+			return false;
+		else {
+			
 
-		for (int index = 0; index < str.length(); index++) {
-			for (int index1 = 0; index1 < str.length(); index1++) {
+			for (int index = 0; index < str.length(); index++) {
+				
+				
+				for (int index1 = 0; index1 < str.length(); index1++) {
 
-				if (str.charAt(index1) == '{') {
-					mystack1.push(str.charAt(index1));
-				}
-
-				else if (str.charAt(index1) == '}') {
-					if (mystack1.empty()) {
-						return false;
-
-					} else {
-						mystack1.pop();
+					if (str.charAt(index1) == '{') {
+						mystack1.push(str.charAt(index1));
 					}
 
+					else if (str.charAt(index1) == '}') {
+						if (mystack1.empty()) {
+							return false;
+
+						} else {
+							mystack1.pop();
+						}
+
+					}
 				}
-			}
 
-			for (int index2 = 0; index2 < str.length(); index2++) {
+				for (int index2 = 0; index2 < str.length(); index2++) {
 
-				if (str.charAt(index2) == '(') {
-					mystack1.push(str.charAt(index2));
-				} else if (str.charAt(index2) == ')') {
-					if (mystack1.empty()) {
-						return false;
+					if (str.charAt(index2) == '(') {
+						mystack1.push(str.charAt(index2));
+					} else if (str.charAt(index2) == ')') {
+						if (mystack1.empty()) {
+							return false;
 
-					} else {
-						mystack1.pop();
+						} else {
+							mystack1.pop();
+						}
+
+					}
+				}
+
+				for (int index3 = 0; index3 < str.length(); index3++) {
+					if (str.charAt(index3) == '[') {
+						mystack1.push(str.charAt(index3));
 					}
 
-				}
-			}
+					else if (str.charAt(index3) == ']') {
+						if (mystack1.empty()) {
+							return false;
 
-			for (int index3 = 0; index3 < str.length(); index3++) {
-				if (str.charAt(index3) == '[') {
-					mystack1.push(str.charAt(index3));
-				}
+						} else {
+							mystack1.pop();
+						}
 
-				else if (str.charAt(index3) == ']') {
-					if (mystack1.empty()) {
-						return false;
-
-					} else {
-						mystack1.pop();
 					}
-
 				}
-			}
 
+			}
+			
 		}
+
 		if (mystack1.empty()) {
 			return true;
 
