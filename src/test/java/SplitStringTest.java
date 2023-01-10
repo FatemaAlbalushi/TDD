@@ -24,7 +24,6 @@ class SplitStringTest extends SplitString {
 		String sentence = null;
 		arraylist1.add("");
 		assertEquals(arraylist1, Ssinstanc.Split(sentence, null));
-		
 	} //End of test1
 	
 	@Test

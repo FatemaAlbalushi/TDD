@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Stack;
 /**
- * This program is able to split the sentence and return 
- *
  */
 public class SplitString {
 	/**
@@ -16,7 +14,6 @@ public class SplitString {
 		System.out.println(Split(sentence, ' '));	
 	}
 	/**
-	 * 
 	 * @param str: the sentence to split
 	 * @param ch: delimiter character to split.
 	 * @return the split sentence without using split method(impliminting the split method) in arraylist
@@ -38,8 +35,6 @@ public class SplitString {
 				}
 			}
 			return arraylist1;
-		}//End of Split method
-		
-		
+		}//End of Split method	
 	}	
 }
