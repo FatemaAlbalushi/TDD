@@ -2,6 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
+import javax.xml.stream.events.EndDocument;
+
 import org.junit.jupiter.api.Test;
 /**
  * This test class will test the split method for different case.
@@ -25,7 +27,7 @@ class SplitStringTest extends SplitString {
 		arraylist1.add("");
 		assertEquals(arraylist1, Ssinstanc.Split(sentence, null));
 		
-	}
+	} //End of test1
 	
 	@Test
 	//2. Take an empty string as the first argument.
@@ -33,7 +35,7 @@ class SplitStringTest extends SplitString {
 		SplitString Ssinstanc= new SplitString(); 
 		ArrayList<String> arraylist1 = new ArrayList<>();
 		assertEquals(arraylist1, Ssinstanc.Split("",' '));
-	}
+	}//End of test2
 	
 	@Test
 	//3. Take an empty string as the second argument.
@@ -48,7 +50,7 @@ class SplitStringTest extends SplitString {
 		arraylist1.add("sentence");
 		assertEquals(arraylist1, Ssinstanc.Split(sentence,' '));
 		
-	}
+	}//End of test3
 	@Test
 	//4. Return an empty array.
 	void test4() {
@@ -57,6 +59,6 @@ class SplitStringTest extends SplitString {
 		String sentence = "";
 		assertEquals(arraylist1, Ssinstanc.Split(sentence,' '));
 		
-	}
+	}//End of test4
 
 }

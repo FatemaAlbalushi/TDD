@@ -42,8 +42,8 @@ public class SplitString {
 				}
 			}
 			return arraylist1;
-		}
-		//ArrayList<String> arraylist1 = new ArrayList<>();
+		}//End of Split method
+		
 		
 	}	
 }
