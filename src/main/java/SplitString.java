@@ -16,8 +16,7 @@ public class SplitString {
 		// TODO Auto-generated method stub
 		String sentence = "Reverse me if you can";
 		System.out.println();
-		System.out.println(Split(sentence, ' '));
-		
+		System.out.println(Split(sentence, ' '));	
 	}
 
 	/**
@@ -26,18 +25,25 @@ public class SplitString {
 	 * @param ch: delimiter character to split.
 	 * @return the split sentence without using split method(impliminting the split method)
 	 */
-	public static ArrayList<String> Split(String str, char ch) {
+	public static ArrayList<String> Split(String str, Character ch) {
 		ArrayList<String> arraylist1 = new ArrayList<>();
-		char[] charstr = str.toCharArray();
-		String wordString = " ";
-
-		for (int i = 0; i < charstr.length; i++) {
-			wordString = wordString + charstr[i];
-			if (charstr[i] == ch || i == charstr.length - 1) {
-				arraylist1.add(wordString);
-				wordString = "";
-			}
+		if  (str == null || ch == null) {
+			arraylist1.add("");
+		    return arraylist1;
 		}
-		return arraylist1;
+		else {
+			char[] charstr = str.toCharArray();
+			String wordString = "";
+			for (int i = 0; i < charstr.length; i++) {
+				wordString = wordString + charstr[i];
+				if (charstr[i] == ch || i == charstr.length - 1) {
+					arraylist1.add(wordString);
+					wordString = ""; 
+				}
+			}
+			return arraylist1;
+		}
+		//ArrayList<String> arraylist1 = new ArrayList<>();
+		
 	}	
 }
