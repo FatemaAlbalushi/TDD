@@ -1,5 +1,7 @@
 import java.util.Stack;
 
+import javax.xml.stream.events.EndDocument;
+
 /**
  * This program is for reversing a sentence.
  *
@@ -14,11 +16,7 @@ public class ReverseString {
 		// TODO Auto-generated method stub
 		String string ="this is a sentence";
 		System.out.println(reverseString(string,""));
-		
-		
 	}
-
-	
 	/**
 	 * method to return the reverse of a string
 	 * @param userstring: the input string which we went to find the reverse of it.
@@ -35,6 +33,6 @@ public class ReverseString {
 		}
 		return reverseString;
 			
-	}
+	}//End the reverseString method
 
 }
