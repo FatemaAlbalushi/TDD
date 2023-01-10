@@ -20,8 +20,9 @@ class ReverseStringTest {
 	@Test
 	void testReverseString1() {
 		ReverseString TRinstanc= new ReverseString(); 
-		String string =null;
-		assertNull(TRinstanc.reverseString(string,""));
+		String string = null;
+		assertEquals(null, TRinstanc.reverseString(string,null));
+		
 		
 	}//End of testReverseString1 method
 	
