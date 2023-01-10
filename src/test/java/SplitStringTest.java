@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 /**
  * This test class will test the split method for different case.
  */
-
 class SplitStringTest extends SplitString {
 
 	/**
@@ -16,7 +15,6 @@ class SplitStringTest extends SplitString {
 	 * 2. Take an empty string as the first argument.
 	 * 3. Take an empty string as the second argument.
      * 4. Return an empty array.
-‌
 	 */
 	@Test
 	//1. Take null for both of the arguments.
@@ -58,7 +56,6 @@ class SplitStringTest extends SplitString {
 		ArrayList<String> arraylist1 = new ArrayList<>();
 		String sentence = "";
 		assertEquals(arraylist1, Ssinstanc.Split(sentence,' '));
-		
 	}//End of test4
 
 }
