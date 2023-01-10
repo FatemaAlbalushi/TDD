@@ -19,13 +19,11 @@ class PowerCalculationTest {
 		assertEquals(1, pwerinstanc.power(0, 0));
 		
 	}
-	
 	@Test
 	//2. base: null, exponent: null
 	void testpower2() {
 		PowerCalculation pwerinstanc= new PowerCalculation(); 
-		//assertNull(pwerinstanc.power(null ,null));
-		assertThrows(NullPointerException.class, () -> {pwerinstanc.power(null, null);});
+		assertNull(pwerinstanc.power(null ,null));
 		
 	}
 	
@@ -33,6 +31,7 @@ class PowerCalculationTest {
 	//3. base: <any positive number>, exponent  <any positive number>
 	void testpower3() {
 		PowerCalculation pwerinstanc= new PowerCalculation(); 
+		
 		assertEquals(8, pwerinstanc.power(2, 3));
 		
 	}

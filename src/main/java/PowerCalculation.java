@@ -1,8 +1,7 @@
 import java.util.HashMap;
 
-
 /**
- * This class will calculate the power function using base and exponent.
+ * This class for calculating the power function using base and exeponent.
  *
  */
 public class PowerCalculation {
@@ -12,7 +11,7 @@ public class PowerCalculation {
 	 *  1. base: 0, exponent: 0
         2. base: null, exponent: null
         3. base: <any positive number>, exponent  <any positive number>
-        4. base: <any negative number>, exponent  <any negative  number>
+        
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -23,27 +22,20 @@ public class PowerCalculation {
 
 	}
 	
-	/**
-	 * Method to calculate the power using base and exponent
-	 * @param base
-	 * @param exponent
-	 * @return
-	 */
-	public static int power(Integer base ,Integer exponent) {
-		HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
+	public static int power(Integer base ,Integer exponrnt) {
+		//HashMap<String,Integer> resultOutput=new HashMap<String, Integer>();
 		HashMap<Integer,Integer> input=new HashMap<Integer, Integer>();
-		input.put(base, exponent);
+		input.put(base, exponrnt);
 		
-		int result=1;
+		Integer result=1;
 		
-		for (;exponent!=0;exponent--) {
+		for (;exponrnt!=0;exponrnt--) {
 			result *= base;
 		}
-		resultOutput.put("result", result);
+		//resultOutput.put("result", result);
 		//System.out.println(input);
-		//System.out.println(resultOutput);
+		System.out.println(result);
 		return result;
 	}
-
 
 }

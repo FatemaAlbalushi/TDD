@@ -1,32 +1,39 @@
-/**
- * 
- */
+import java.util.Stack;
 
 /**
- * @author LAP-10
+ * This program is for reversing a sentence.
  *
  */
 public class ReverseString {
 
 	/**
+	 * This method is for reversing a string
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String string ="This is the string";
-		System.out.println();
-		System.out.println("Print the Reverse string");
-		reverseString(string);
-	}
-	
-	public static void reverseString(String userstring) {
+		String string ="this is a sentence";
+		System.out.println(reverseString(string,""));
 		
+		
+	}
+
+	
+	/**
+	 * method to return the reverse of a string
+	 * @param userstring: the input string which we went to find the reverse of it.
+	 * @param reverseString : the userinput after being reversed
+	 * @return : the reverseString
+	 */
+	public static String reverseString(String userstring, String reverseString) {
+		char [] userstringChar= userstring.toCharArray();
+		
+		 reverseString = "";
 		for(int character = userstring.length()-1;character >=0 ; character--) {
-			 
-			System.out.print(userstring.charAt(character));
+			
+			reverseString=reverseString+userstringChar[character];	
 		}
-		System.out.println();
+		return reverseString;
 			
 	}
 
