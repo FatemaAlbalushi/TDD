@@ -36,11 +36,6 @@ public class bracketsValidation {
 	 */
 	public static boolean countBarn(String str) {
 		Stack<Character> mystack1 = new Stack<Character>();
-		
-		if (str==null)
-			return false;
-		else {
-			
 
 			for (int index = 0; index < str.length(); index++) {
 				
@@ -95,7 +90,7 @@ public class bracketsValidation {
 
 			}
 			
-		}
+		
 
 		if (mystack1.empty()) {
 			return true;
