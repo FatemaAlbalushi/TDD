@@ -89,8 +89,6 @@ public class bracketsValidation {
 				}
 
 			}
-			
-		
 
 		if (mystack1.empty()) {
 			return true;
